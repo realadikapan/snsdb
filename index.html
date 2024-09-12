@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semey New School — Школа нового поколения</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <img src="img/logo.png" alt="Semey New School Logo" style="height: 50px; vertical-align: middle; margin-right: 10px" />
+            Semey New School
+          </a>
+          <ul class="menu">
+            <li><a href="#about-school">О школе</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>  
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Semey New School</h1>
+        <p>Школа нового поколения с акцентом на подготовку к ЕНТ и IT-навыки</p>
+        <a href="https://api.whatsapp.com/send/?phone=77476553149&text&type=phone_number&app_absent=0" class="cta-btn">Узнать больше</a>
+      </div>
+    </section>
+
+    <!-- Section для новостей -->
+    <section class="news">
+      <div class="container">
+        <h2>Новости</h2>
+        <div class="news-grid" id="news-container">
+          <!-- Новости будут загружаться динамически -->
+        </div>
+      </div>
+
+      <!-- News Modal Popup -->
+      <div id="newsModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeNewsModal()">&times;</span>
+          <div id="modal-details"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section для расписания -->
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <h2>Расписание</h2>
+        <br />
+        <select id="class-select" onchange="showSchedule()">
+          <option value="1">1 класс</option>
+          <option value="2">2 класс</option>
+          <option value="3">3 класс</option>
+          <option value="4">4 класс</option>
+          <option value="5">5 класс</option>
+          <option value="6">6 класс</option>
+          <option value="7">7 класс</option>
+          <option value="8">8 класс</option>
+          <option value="9">9 класс</option>
+          <option value="10">10 класс</option>
+          <option value="11">11 класс</option>
+        </select>
+
+        <div id="schedule-details" class="schedule-details">
+          <p>Выберите класс для отображения расписания*</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция О школе -->
+    <section class="about-school" id="about-school">
+      <div class="container">
+        <h2>О школе</h2>
+        <p>
+          Semey New School — это школа нового поколения, ориентированная на подготовку учеников к современным вызовам. Мы предоставляем
+          качественное образование с акцентом на развитие IT-навыков, научных знаний и подготовку к ЕНТ. Наши преподаватели используют современные
+          методики обучения и индивидуальный подход к каждому ученику.
+        </p>
+      </div>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: info@semeynewschool.kz</p>
+        <p>Телефон: +7 (747) 655-31-49</p>
+        <p>Адрес: Казахстан, г. Семей, ул. Байсеитова, 5</p>
+        <p>Часы работы: Понедельник - Пятница, с 9:00 до 17:00</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MARti. Semey New School. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- JS скрипты -->
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
